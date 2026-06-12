@@ -31,13 +31,13 @@ public class circulo extends FG{
          this.radio=radio;
      }
      @Override
-    public double calcularPerimetro(){
-        this.perimetro=2*radio*PI;
-        return perimetro;
+    protected double calcularPerimetro(){
+      
+        return 2*radio*PI;
     }
-    public double calcularArea(){
-        this.area= Math.pow(radio, 2)*PI;
-        return area;
+    protected double calcularArea(){
+    return Math.pow(radio, 2)*PI;
+      
     }
 
    
