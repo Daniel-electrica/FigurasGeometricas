@@ -17,7 +17,7 @@ public class circulo extends FG{
         return radio;
     }
       public double getDiametro(){
-        return radio*2;
+        return calcularDiametro();
     }
       public static double getPI(){
           return PI;
@@ -30,6 +30,11 @@ public class circulo extends FG{
      public circulo(double radio){
          this.radio=radio;
      }
+     private double calcularDiametro(){
+         return 2*radio;
+     }
+         
+         
      @Override
     protected double calcularPerimetro(){
       
